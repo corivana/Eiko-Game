@@ -93,7 +93,7 @@ public class MeleeEnemyManager : MonoBehaviour
         if (enemyCurrentEnergy <= 0)
         {
             Die();
-            player.ChangeEnergy(30); //when an enemy dies add energy to player
+            PlayerManager.instance.ChangeEnergy(30); //when an enemy dies add energy to player
         }
     }
 
