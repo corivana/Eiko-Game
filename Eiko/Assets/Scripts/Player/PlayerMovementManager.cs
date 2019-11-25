@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovementManager : MonoBehaviour
 {
+    public static PlayerMovementManager instance;
 
     //***THE CODE FOR ROTATING THE PLAYER IS IN THE CAMERA CONTROLLER SCRIPT***
 
@@ -46,6 +47,7 @@ public class PlayerMovementManager : MonoBehaviour
         {
             anim.SetInteger(HashIDs.jogCond_Int, 0);
         }
+   
 
 
         //check if the player is on the ground before jumping
@@ -57,10 +59,12 @@ public class PlayerMovementManager : MonoBehaviour
             {
                 moveDirection.y = jumpForce;
             }
+
         }
 
-        //Apply Gravity to Y axis
-        moveDirection.y += (Physics.gravity.y * gravityScale * Time.deltaTime);
+
+    //Apply Gravity to Y axis
+    moveDirection.y += (Physics.gravity.y * gravityScale * Time.deltaTime);
 
         //Input movement direction into CharacterController
         controller.Move(moveDirection * Time.deltaTime);

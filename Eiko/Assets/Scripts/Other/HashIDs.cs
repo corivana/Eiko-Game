@@ -6,6 +6,8 @@ public class HashIDs : MonoBehaviour
 {
     public static int jogCond_Int = Animator.StringToHash("jogCond");
     public static int slashCond_Int = Animator.StringToHash("slashCond");
+    public static int shootCond_Int = Animator.StringToHash("shootCond");
+    public static int jumpCond_Int = Animator.StringToHash("jumpCond");
 
     public static int flyingCond_Int = Animator.StringToHash("flyingCond");
     public static int attackCond_Int = Animator.StringToHash("attackCond");

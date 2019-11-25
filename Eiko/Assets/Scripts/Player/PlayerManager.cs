@@ -55,8 +55,9 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
+
         //If we are in a level then let energy degen over time
-        if(LevelTransitionManager.inLevel == true)
+        if (LevelTransitionManager.inLevel == true)
         {
             EnergyDegen();
         }
@@ -67,9 +68,12 @@ public class PlayerManager : MonoBehaviour
         
         if (fireCountdown <= 0f && Input.GetMouseButtonDown(1))
         {
-            temp.position = rangedTarget.position;
-            PerformRangedAttack();
+            anim.SetInteger(HashIDs.shootCond_Int, 1);
             fireCountdown = 1f / fireRate;
+        }
+        else
+        {
+            anim.SetInteger(HashIDs.shootCond_Int, 0);
         }
 
         fireCountdown -= Time.deltaTime;
@@ -82,6 +86,7 @@ public class PlayerManager : MonoBehaviour
 
     void PerformRangedAttack()
     {
+        temp.position = rangedTarget.position;
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         BulletManager bullet = bulletGO.GetComponent<BulletManager>();
 
