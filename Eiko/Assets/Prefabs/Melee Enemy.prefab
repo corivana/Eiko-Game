@@ -243,7 +243,7 @@ Transform:
   m_GameObject: {fileID: 3149937380641468139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 41.755836, y: 16.12, z: -51.469635}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 2705029006777196879}
   - {fileID: 4139637842913135963}
@@ -343,7 +343,7 @@ MonoBehaviour:
   enemyMaxEnergy: 100
   aggroRadius: 15
   EnemyEnergyBar: {fileID: 6383639499879884914}
-  deathEffectPrefab: {fileID: 7036391742538878822, guid: fefad335cb2f6a549b7cfd7600b450fc,
+  deathEffectPrefab: {fileID: 4868122937186521751, guid: fefad335cb2f6a549b7cfd7600b450fc,
     type: 3}
   anim: {fileID: 8315766155878445442}
 --- !u!1 &3629764349357897868
