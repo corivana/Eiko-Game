@@ -36,6 +36,15 @@ public class SwordManager : MonoBehaviour
             }
 
         }
+        if (other.gameObject.tag == "Boss")
+        {
+            //Debug.Log("Collision with sword!");
+            if (attackEnabled == true)
+            {
+                objectCollided.GetComponent<BossManager>().ChangeEnergy(-5);
+            }
+
+        }
     }
 
     /*

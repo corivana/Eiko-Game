@@ -184,6 +184,7 @@ public class PlayerManager : MonoBehaviour
     private void Die()
     {
         print("Player Dead!");
+        Destroy(gameObject);
         //TODO: What do we do when we die?
     }
 

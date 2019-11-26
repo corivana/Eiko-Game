@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 5947121253324415579}
   gravityScale: 3
-  moveSpeed: 8
+  moveSpeed: 10
   jumpForce: 10
   anim: {fileID: 745681484732546357}
 --- !u!114 &5947121253324415581
