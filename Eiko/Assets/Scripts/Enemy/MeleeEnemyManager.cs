@@ -19,8 +19,10 @@ public class MeleeEnemyManager : MonoBehaviour
     public GameObject deathEffectPrefab;
     public Animator anim;
 
+
     void Start()
     {
+
         navAgent = GetComponent<NavMeshAgent>();
         enemyMaxEnergy = 100f;
         enemyCurrentEnergy = enemyMaxEnergy;
@@ -90,6 +92,7 @@ public class MeleeEnemyManager : MonoBehaviour
     {
         enemyCurrentEnergy += amount;
         EnemyEnergyBar.fillAmount = enemyCurrentEnergy / 100;
+       
         if (enemyCurrentEnergy <= 0)
         {
             Die();

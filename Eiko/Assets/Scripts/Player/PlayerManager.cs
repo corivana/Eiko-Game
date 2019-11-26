@@ -30,7 +30,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] public float maxEnergy;
 
     //Cheats
-    private bool invincible = false; 
+    private bool invincible = false;
+
+    public AudioSource ShootSource;
+    public AudioClip shootClip;
 
     private void Awake()
     {
@@ -49,6 +52,7 @@ public class PlayerManager : MonoBehaviour
     }
     void Start()
     {
+        ShootSource.clip = shootClip;
         movementManager = GetComponent<PlayerMovementManager>();
         currentEnergy = 100f;
     }
@@ -86,6 +90,7 @@ public class PlayerManager : MonoBehaviour
 
     void PerformRangedAttack()
     {
+        ShootSource.Play();
         temp.position = rangedTarget.position;
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         BulletManager bullet = bulletGO.GetComponent<BulletManager>();

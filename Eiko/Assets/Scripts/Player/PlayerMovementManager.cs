@@ -18,6 +18,7 @@ public class PlayerMovementManager : MonoBehaviour
     private Vector3 moveDirection;
     public Animator anim;
 
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -38,20 +39,30 @@ public class PlayerMovementManager : MonoBehaviour
         moveDirection = moveDirection.normalized * moveSpeed;
         moveDirection.y = yStore; //Keep the same y value
 
-        //Animation Transition
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)) //if wasd pressed then animate
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S)) //|| Input.GetKeyDown(KeyCode.S)) //|| (Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.A)) || (Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.D)))
         {
-            anim.SetInteger(HashIDs.jogCond_Int, 1);
+            anim.SetInteger(HashIDs.forwardCond_Int, 1);
         }
-        else if(!(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))) //if none are pressed then return back to idle
+
+        else if (Input.GetKeyDown(KeyCode.A) && !(Input.GetKey(KeyCode.W))) // && !(Input.GetKey(KeyCode.W)))
         {
-            anim.SetInteger(HashIDs.jogCond_Int, 0);
+            anim.SetInteger(HashIDs.leftCond_Int, 1);
         }
-   
+        else if (Input.GetKeyDown(KeyCode.D) && !(Input.GetKey(KeyCode.W))) // && !(Input.GetKey(KeyCode.W)))
+        {
+            anim.SetInteger(HashIDs.rightCond_Int, 1);
+        }
+        else if(!(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
+        {
+            anim.SetInteger(HashIDs.forwardCond_Int, 0);
+            anim.SetInteger(HashIDs.backwardCond_Int, 0);
+            anim.SetInteger(HashIDs.leftCond_Int, 0);
+            anim.SetInteger(HashIDs.rightCond_Int, 0);
+        }
 
 
         //check if the player is on the ground before jumping
-        if (controller.isGrounded) 
+        if (controller.isGrounded)
         {
             moveDirection.y = 0f;
             //Jumping
@@ -63,11 +74,10 @@ public class PlayerMovementManager : MonoBehaviour
         }
 
 
-    //Apply Gravity to Y axis
-    moveDirection.y += (Physics.gravity.y * gravityScale * Time.deltaTime);
+        //Apply Gravity to Y axis
+        moveDirection.y += (Physics.gravity.y * gravityScale * Time.deltaTime);
 
         //Input movement direction into CharacterController
         controller.Move(moveDirection * Time.deltaTime);
-
     }
 }
