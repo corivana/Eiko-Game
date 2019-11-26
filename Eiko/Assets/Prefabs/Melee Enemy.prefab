@@ -346,8 +346,6 @@ MonoBehaviour:
   deathEffectPrefab: {fileID: 4868122937186521751, guid: fefad335cb2f6a549b7cfd7600b450fc,
     type: 3}
   anim: {fileID: 8315766155878445442}
-  HurtSource: {fileID: 0}
-  hurtClip: {fileID: 8300000, guid: 6aae20ff1f7634545b0d4af6aebbf527, type: 3}
 --- !u!1 &3629764349357897868
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9529412, g: 0.027450958, b: 0.18428633, a: 1}
+  m_Color: {r: 0.4811321, g: 0.10666607, b: 0.17013498, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

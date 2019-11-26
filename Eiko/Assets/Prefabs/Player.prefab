@@ -750,7 +750,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3043651351065047279}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.10099983, y: 1.476, z: 0.8899994}
+  m_LocalPosition: {x: -0.10099983, y: 1.106, z: 0.8899994}
   m_LocalScale: {x: 1.0416672, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7265206276505014351}
@@ -1567,7 +1567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4405920195393558186}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.6109991, y: 1.4, z: 15.27}
+  m_LocalPosition: {x: -0.6109991, y: 1.03, z: 15.27}
   m_LocalScale: {x: 1.0416672, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7265206276505014351}
@@ -1939,6 +1939,8 @@ MonoBehaviour:
   firePoint: {fileID: 3043651351065047276}
   currentEnergy: 100
   maxEnergy: 100
+  ShootSource: {fileID: 0}
+  shootClip: {fileID: 0}
 --- !u!136 &5947121253324415576
 CapsuleCollider:
   m_ObjectHideFlags: 0

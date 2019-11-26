@@ -33,7 +33,7 @@ public class JunAI : MonoBehaviour
 
     void ChangeColorToRed()
     {
-        GameObject.Find("Jun").GetComponent<Light>().color = Color.red;
+        GameObject.Find("Jun").GetComponent<Light>().color = Color.green;
     }
     void ChangeColorToWhite()
     {

@@ -62,14 +62,14 @@ public class BulletManager : MonoBehaviour
         {
             destroy = true;
             //Debug.Log("Collision with bullet!");
-            objectCollided.GetComponent<MeleeEnemyManager>().ChangeEnergy(-10);
+            objectCollided.GetComponent<MeleeEnemyManager>().ChangeEnergy(-20);
             //Destroy(gameObject);
         }
         if (other.gameObject.tag == "rangedEnemy")
         {
             destroy = true;
             //Debug.Log("Collision with bullet!");
-            objectCollided.GetComponent<RangedEnemyManager>().ChangeEnergy(-10);
+            objectCollided.GetComponent<RangedEnemyManager>().ChangeEnergy(-20);
             //Destroy(gameObject);
         }
     }
