@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Samples" t="Include">
+          <e p="Terrain Tools" t="Include">
+            <e p="0.1.0-preview" t="Include">
+              <e p="Terrain Assets" t="Include">
+                <e p="ThirdPartyNotices.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraCollision.cs" t="Include" />
+            <e p="CameraController.cs" t="Include" />
+            <e p="CameraFollow.cs" t="Include" />
+          </e>
+          <e p="Enemy" t="Include">
+            <e p="MeleeEnemyManager.cs" t="Include" />
+            <e p="RangedEnemyManager.cs" t="Include" />
+          </e>
+          <e p="Other" t="Include">
+            <e p="BGMusicSingleton.cs" t="Include" />
+            <e p="HashIDs.cs" t="Include" />
+            <e p="InteractableManager.cs" t="Include" />
+            <e p="JunAI.cs" t="Include" />
+            <e p="LevelTransitionManager.cs" t="Include" />
+            <e p="SpawnPointManager.cs" t="Include" />
+            <e p="TempTargetSingleton.cs" t="Include" />
+            <e p="WanderingAI.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="PlayerMovementManager.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="CanvasSingleton.cs" t="Include" />
+            <e p="GameMenuManager.cs" t="Include" />
+            <e p="HUDManager.cs" t="Include" />
+            <e p="MainMenuManager.cs" t="Include" />
+          </e>
+          <e p="Weapons" t="Include">
+            <e p="BulletManager.cs" t="Include" />
+            <e p="EnemyBulletManager.cs" t="Include" />
+            <e p="SwordManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SkySerie Freebie" t="Include">
+          <e p="Hdri setup.txt" t="Include" />
+        </e>
+        <e p="Tom's Terrain Tools" t="Include">
+          <e p="2DTools" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TTTools2D.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Camera2DFollow.cs" t="Include" />
+              <e p="CircleMoverSample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="ClearWaterLevel.cs" t="Include" />
+            <e p="IncrementalSplatmapping.cs" t="Include" />
+            <e p="PlaceOnTerrain.cs" t="Include" />
+            <e p="RandomObjectMap.cs" t="Include" />
+            <e p="SplatMapGenerator.cs" t="Include" />
+            <e p="TerrainTools.cs" t="Include" />
+          </e>
+          <e p="Example Data" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="PlayerHoverController.cs" t="Include" />
+              <e p="SimpleSmoothMouseLook.cs" t="Include" />
+            </e>
+            <e p="Terragen Sources" t="Include">
+              <e p="README.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="ForceGrassDistanceInEditor.cs" t="Include" />
+            <e p="KeepOnSurface.cs" t="Include" />
+            <e p="PlaceOnSurfaceAtStart.cs" t="Include" />
+            <e p="SpawnInArea.cs" t="Include" />
+            <e p="TerrainQualitySettings.cs" t="Include" />
+            <e p="TreeExplosion.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Eiko.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_Eiko.-1660117996.00" t="ExcludeRecursive" />
+  </component>
+</project>
