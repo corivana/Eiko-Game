@@ -72,6 +72,13 @@ public class BulletManager : MonoBehaviour
             objectCollided.GetComponent<RangedEnemyManager>().ChangeEnergy(-20);
             //Destroy(gameObject);
         }
+        if (other.gameObject.tag == "Boss")
+        {
+            destroy = true;
+            //Debug.Log("Collision with bullet!");
+            objectCollided.GetComponent<BossManager>().ChangeEnergy(-20);
+            //Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter(Collision col)

@@ -12,6 +12,7 @@ TagManager:
   - level1
   - rangedEnemy
   - meleeEnemy
+  - Boss
   layers:
   - Default
   - TransparentFX
