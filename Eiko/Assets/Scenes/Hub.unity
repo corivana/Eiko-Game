@@ -6058,6 +6058,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5947121253324415578, guid: d3066528092c10544a02103eacd30111,
+        type: 3}
+      propertyPath: SoundSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947121253324415578, guid: d3066528092c10544a02103eacd30111,
+        type: 3}
+      propertyPath: soundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 19ae24ff495301f4da3ec390cb2abd3a, type: 3}
     - target: {fileID: 7265206276505014351, guid: d3066528092c10544a02103eacd30111,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6113,16 +6123,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5947121253324415578, guid: d3066528092c10544a02103eacd30111,
-        type: 3}
-      propertyPath: SoundSource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947121253324415578, guid: d3066528092c10544a02103eacd30111,
-        type: 3}
-      propertyPath: soundClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 19ae24ff495301f4da3ec390cb2abd3a, type: 3}
     - target: {fileID: 5947121253324415581, guid: d3066528092c10544a02103eacd30111,
         type: 3}
       propertyPath: temp
